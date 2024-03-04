@@ -1,0 +1,1075 @@
+2024-02-15T12:45:14.206+05:30  INFO 3724 --- [restartedMain] com.masai.SwiggyApplication              : Starting SwiggyApplication using Java 19.0.2 with PID 3724 (C:\Users\mozak\OneDrive\Desktop\Masai Problem Setting\Swiggy\target\classes started by mozak in C:\Users\mozak\OneDrive\Desktop\Masai Problem Setting\Swiggy)
+2024-02-15T12:45:14.209+05:30  INFO 3724 --- [restartedMain] com.masai.SwiggyApplication              : No active profile set, falling back to 1 default profile: "default"
+2024-02-15T12:45:14.275+05:30  INFO 3724 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-02-15T12:45:14.275+05:30  INFO 3724 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-02-15T12:45:15.220+05:30  INFO 3724 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-02-15T12:45:15.305+05:30  INFO 3724 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 77 ms. Found 5 JPA repository interfaces.
+2024-02-15T12:45:16.084+05:30  INFO 3724 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2024-02-15T12:45:16.094+05:30  INFO 3724 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-15T12:45:16.095+05:30  INFO 3724 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2024-02-15T12:45:16.169+05:30  INFO 3724 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-15T12:45:16.170+05:30  INFO 3724 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1888 ms
+2024-02-15T12:45:16.363+05:30  INFO 3724 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-02-15T12:45:16.428+05:30  INFO 3724 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.5.Final
+2024-02-15T12:45:16.431+05:30  INFO 3724 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2024-02-15T12:45:16.567+05:30  INFO 3724 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2024-02-15T12:45:16.693+05:30  INFO 3724 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-02-15T12:45:16.707+05:30  INFO 3724 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-02-15T12:45:17.050+05:30  INFO 3724 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@23b05dee
+2024-02-15T12:45:17.052+05:30  INFO 3724 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-02-15T12:45:17.322+05:30  WARN 3724 --- [restartedMain] o.h.b.model.internal.AnnotationBinder    : HHH000503: A class should not be annotated with both @Inheritance and @MappedSuperclass. @Inheritance will be ignored for: com.masai.model.User.
+2024-02-15T12:45:17.541+05:30  WARN 3724 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: class org.hibernate.mapping.BasicValue cannot be cast to class org.hibernate.mapping.ToOne (org.hibernate.mapping.BasicValue and org.hibernate.mapping.ToOne are in unnamed module of loader 'app')
+2024-02-15T12:45:17.544+05:30  INFO 3724 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-02-15T12:45:17.554+05:30  INFO 3724 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-02-15T12:45:17.561+05:30  INFO 3724 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-02-15T12:45:17.581+05:30  INFO 3724 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-02-15T12:45:17.607+05:30 ERROR 3724 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: class org.hibernate.mapping.BasicValue cannot be cast to class org.hibernate.mapping.ToOne (org.hibernate.mapping.BasicValue and org.hibernate.mapping.ToOne are in unnamed module of loader 'app')
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1770) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154) ~[spring-context-6.0.10.jar:6.0.10]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:931) ~[spring-context-6.0.10.jar:6.0.10]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608) ~[spring-context-6.0.10.jar:6.0.10]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.1.1.jar:3.1.1]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-3.1.1.jar:3.1.1]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:436) ~[spring-boot-3.1.1.jar:3.1.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312) ~[spring-boot-3.1.1.jar:3.1.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-3.1.1.jar:3.1.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-3.1.1.jar:3.1.1]
+	at com.masai.SwiggyApplication.main(SwiggyApplication.java:9) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.1.1.jar:3.1.1]
+Caused by: java.lang.ClassCastException: class org.hibernate.mapping.BasicValue cannot be cast to class org.hibernate.mapping.ToOne (org.hibernate.mapping.BasicValue and org.hibernate.mapping.ToOne are in unnamed module of loader 'app')
+	at org.hibernate.boot.model.internal.BinderHelper.checkMappedByType(BinderHelper.java:1086) ~[hibernate-core-6.2.5.Final.jar:6.2.5.Final]
+	at org.hibernate.boot.model.internal.CollectionBinder.isReversePropertyInJoin(CollectionBinder.java:1571) ~[hibernate-core-6.2.5.Final.jar:6.2.5.Final]
+	at org.hibernate.boot.model.internal.CollectionBinder.noAssociationTable(CollectionBinder.java:1582) ~[hibernate-core-6.2.5.Final.jar:6.2.5.Final]
+	at org.hibernate.boot.model.internal.CollectionBinder.bindStarToManySecondPass(CollectionBinder.java:1543) ~[hibernate-core-6.2.5.Final.jar:6.2.5.Final]
+	at org.hibernate.boot.model.internal.CollectionBinder$1.secondPass(CollectionBinder.java:1534) ~[hibernate-core-6.2.5.Final.jar:6.2.5.Final]
+	at org.hibernate.boot.model.internal.CollectionSecondPass.doSecondPass(CollectionSecondPass.java:45) ~[hibernate-core-6.2.5.Final.jar:6.2.5.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processSecondPasses(InFlightMetadataCollectorImpl.java:1857) ~[hibernate-core-6.2.5.Final.jar:6.2.5.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processSecondPasses(InFlightMetadataCollectorImpl.java:1814) ~[hibernate-core-6.2.5.Final.jar:6.2.5.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:328) ~[hibernate-core-6.2.5.Final.jar:6.2.5.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1380) ~[hibernate-core-6.2.5.Final.jar:6.2.5.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1451) ~[hibernate-core-6.2.5.Final.jar:6.2.5.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75) ~[spring-orm-6.0.10.jar:6.0.10]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:376) ~[spring-orm-6.0.10.jar:6.0.10]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-6.0.10.jar:6.0.10]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-6.0.10.jar:6.0.10]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:352) ~[spring-orm-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1816) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1766) ~[spring-beans-6.0.10.jar:6.0.10]
+	... 19 common frames omitted
+
+2024-02-15T12:50:18.052+05:30  INFO 7132 --- [restartedMain] com.masai.SwiggyApplication              : Starting SwiggyApplication using Java 19.0.2 with PID 7132 (C:\Users\mozak\OneDrive\Desktop\Masai Problem Setting\Swiggy\target\classes started by mozak in C:\Users\mozak\OneDrive\Desktop\Masai Problem Setting\Swiggy)
+2024-02-15T12:50:18.055+05:30  INFO 7132 --- [restartedMain] com.masai.SwiggyApplication              : No active profile set, falling back to 1 default profile: "default"
+2024-02-15T12:50:18.123+05:30  INFO 7132 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-02-15T12:50:18.123+05:30  INFO 7132 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-02-15T12:50:19.040+05:30  INFO 7132 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-02-15T12:50:19.116+05:30  INFO 7132 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 66 ms. Found 5 JPA repository interfaces.
+2024-02-15T12:50:19.872+05:30  INFO 7132 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2024-02-15T12:50:19.885+05:30  INFO 7132 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-15T12:50:19.885+05:30  INFO 7132 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2024-02-15T12:50:19.949+05:30  INFO 7132 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-15T12:50:19.949+05:30  INFO 7132 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1825 ms
+2024-02-15T12:50:20.167+05:30  INFO 7132 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-02-15T12:50:20.229+05:30  INFO 7132 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.5.Final
+2024-02-15T12:50:20.232+05:30  INFO 7132 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2024-02-15T12:50:20.362+05:30  INFO 7132 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2024-02-15T12:50:20.492+05:30  INFO 7132 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-02-15T12:50:20.506+05:30  INFO 7132 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-02-15T12:50:20.785+05:30  INFO 7132 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2f3c0da
+2024-02-15T12:50:20.787+05:30  INFO 7132 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-02-15T12:50:20.966+05:30  WARN 7132 --- [restartedMain] o.h.b.model.internal.AnnotationBinder    : HHH000503: A class should not be annotated with both @Inheritance and @MappedSuperclass. @Inheritance will be ignored for: com.masai.model.User.
+2024-02-15T12:50:21.149+05:30  WARN 7132 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: class org.hibernate.mapping.BasicValue cannot be cast to class org.hibernate.mapping.ToOne (org.hibernate.mapping.BasicValue and org.hibernate.mapping.ToOne are in unnamed module of loader 'app')
+2024-02-15T12:50:21.151+05:30  INFO 7132 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-02-15T12:50:21.171+05:30  INFO 7132 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-02-15T12:50:21.173+05:30  INFO 7132 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-02-15T12:50:21.184+05:30  INFO 7132 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-02-15T12:50:21.205+05:30 ERROR 7132 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: class org.hibernate.mapping.BasicValue cannot be cast to class org.hibernate.mapping.ToOne (org.hibernate.mapping.BasicValue and org.hibernate.mapping.ToOne are in unnamed module of loader 'app')
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1770) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154) ~[spring-context-6.0.10.jar:6.0.10]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:931) ~[spring-context-6.0.10.jar:6.0.10]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608) ~[spring-context-6.0.10.jar:6.0.10]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.1.1.jar:3.1.1]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-3.1.1.jar:3.1.1]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:436) ~[spring-boot-3.1.1.jar:3.1.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312) ~[spring-boot-3.1.1.jar:3.1.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-3.1.1.jar:3.1.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-3.1.1.jar:3.1.1]
+	at com.masai.SwiggyApplication.main(SwiggyApplication.java:9) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.1.1.jar:3.1.1]
+Caused by: java.lang.ClassCastException: class org.hibernate.mapping.BasicValue cannot be cast to class org.hibernate.mapping.ToOne (org.hibernate.mapping.BasicValue and org.hibernate.mapping.ToOne are in unnamed module of loader 'app')
+	at org.hibernate.boot.model.internal.BinderHelper.checkMappedByType(BinderHelper.java:1086) ~[hibernate-core-6.2.5.Final.jar:6.2.5.Final]
+	at org.hibernate.boot.model.internal.CollectionBinder.isReversePropertyInJoin(CollectionBinder.java:1571) ~[hibernate-core-6.2.5.Final.jar:6.2.5.Final]
+	at org.hibernate.boot.model.internal.CollectionBinder.noAssociationTable(CollectionBinder.java:1582) ~[hibernate-core-6.2.5.Final.jar:6.2.5.Final]
+	at org.hibernate.boot.model.internal.CollectionBinder.bindStarToManySecondPass(CollectionBinder.java:1543) ~[hibernate-core-6.2.5.Final.jar:6.2.5.Final]
+	at org.hibernate.boot.model.internal.CollectionBinder$1.secondPass(CollectionBinder.java:1534) ~[hibernate-core-6.2.5.Final.jar:6.2.5.Final]
+	at org.hibernate.boot.model.internal.CollectionSecondPass.doSecondPass(CollectionSecondPass.java:45) ~[hibernate-core-6.2.5.Final.jar:6.2.5.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processSecondPasses(InFlightMetadataCollectorImpl.java:1857) ~[hibernate-core-6.2.5.Final.jar:6.2.5.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processSecondPasses(InFlightMetadataCollectorImpl.java:1814) ~[hibernate-core-6.2.5.Final.jar:6.2.5.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:328) ~[hibernate-core-6.2.5.Final.jar:6.2.5.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1380) ~[hibernate-core-6.2.5.Final.jar:6.2.5.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1451) ~[hibernate-core-6.2.5.Final.jar:6.2.5.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75) ~[spring-orm-6.0.10.jar:6.0.10]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:376) ~[spring-orm-6.0.10.jar:6.0.10]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-6.0.10.jar:6.0.10]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-6.0.10.jar:6.0.10]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:352) ~[spring-orm-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1816) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1766) ~[spring-beans-6.0.10.jar:6.0.10]
+	... 19 common frames omitted
+
+2024-02-15T12:50:45.049+05:30  INFO 25776 --- [restartedMain] com.masai.SwiggyApplication              : Starting SwiggyApplication using Java 19.0.2 with PID 25776 (C:\Users\mozak\OneDrive\Desktop\Masai Problem Setting\Swiggy\target\classes started by mozak in C:\Users\mozak\OneDrive\Desktop\Masai Problem Setting\Swiggy)
+2024-02-15T12:50:45.052+05:30  INFO 25776 --- [restartedMain] com.masai.SwiggyApplication              : No active profile set, falling back to 1 default profile: "default"
+2024-02-15T12:50:45.120+05:30  INFO 25776 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-02-15T12:50:45.120+05:30  INFO 25776 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-02-15T12:50:46.209+05:30  INFO 25776 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-02-15T12:50:46.311+05:30  INFO 25776 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 91 ms. Found 5 JPA repository interfaces.
+2024-02-15T12:50:47.224+05:30  INFO 25776 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2024-02-15T12:50:47.237+05:30  INFO 25776 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-15T12:50:47.237+05:30  INFO 25776 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2024-02-15T12:50:47.356+05:30  INFO 25776 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-15T12:50:47.357+05:30  INFO 25776 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2235 ms
+2024-02-15T12:50:47.679+05:30  INFO 25776 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-02-15T12:50:47.780+05:30  INFO 25776 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.5.Final
+2024-02-15T12:50:47.793+05:30  INFO 25776 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2024-02-15T12:50:48.052+05:30  INFO 25776 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2024-02-15T12:50:48.294+05:30  INFO 25776 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-02-15T12:50:48.322+05:30  INFO 25776 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-02-15T12:50:48.885+05:30  INFO 25776 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@54a242e8
+2024-02-15T12:50:48.889+05:30  INFO 25776 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-02-15T12:50:49.250+05:30  WARN 25776 --- [restartedMain] o.h.b.model.internal.AnnotationBinder    : HHH000503: A class should not be annotated with both @Inheritance and @MappedSuperclass. @Inheritance will be ignored for: com.masai.model.User.
+2024-02-15T12:50:49.512+05:30  WARN 25776 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: class org.hibernate.mapping.BasicValue cannot be cast to class org.hibernate.mapping.ToOne (org.hibernate.mapping.BasicValue and org.hibernate.mapping.ToOne are in unnamed module of loader 'app')
+2024-02-15T12:50:49.516+05:30  INFO 25776 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-02-15T12:50:49.533+05:30  INFO 25776 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-02-15T12:50:49.537+05:30  INFO 25776 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-02-15T12:50:49.564+05:30  INFO 25776 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-02-15T12:50:49.597+05:30 ERROR 25776 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: class org.hibernate.mapping.BasicValue cannot be cast to class org.hibernate.mapping.ToOne (org.hibernate.mapping.BasicValue and org.hibernate.mapping.ToOne are in unnamed module of loader 'app')
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1770) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154) ~[spring-context-6.0.10.jar:6.0.10]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:931) ~[spring-context-6.0.10.jar:6.0.10]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608) ~[spring-context-6.0.10.jar:6.0.10]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.1.1.jar:3.1.1]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-3.1.1.jar:3.1.1]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:436) ~[spring-boot-3.1.1.jar:3.1.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312) ~[spring-boot-3.1.1.jar:3.1.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-3.1.1.jar:3.1.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-3.1.1.jar:3.1.1]
+	at com.masai.SwiggyApplication.main(SwiggyApplication.java:9) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.1.1.jar:3.1.1]
+Caused by: java.lang.ClassCastException: class org.hibernate.mapping.BasicValue cannot be cast to class org.hibernate.mapping.ToOne (org.hibernate.mapping.BasicValue and org.hibernate.mapping.ToOne are in unnamed module of loader 'app')
+	at org.hibernate.boot.model.internal.BinderHelper.checkMappedByType(BinderHelper.java:1086) ~[hibernate-core-6.2.5.Final.jar:6.2.5.Final]
+	at org.hibernate.boot.model.internal.CollectionBinder.isReversePropertyInJoin(CollectionBinder.java:1571) ~[hibernate-core-6.2.5.Final.jar:6.2.5.Final]
+	at org.hibernate.boot.model.internal.CollectionBinder.noAssociationTable(CollectionBinder.java:1582) ~[hibernate-core-6.2.5.Final.jar:6.2.5.Final]
+	at org.hibernate.boot.model.internal.CollectionBinder.bindStarToManySecondPass(CollectionBinder.java:1543) ~[hibernate-core-6.2.5.Final.jar:6.2.5.Final]
+	at org.hibernate.boot.model.internal.CollectionBinder$1.secondPass(CollectionBinder.java:1534) ~[hibernate-core-6.2.5.Final.jar:6.2.5.Final]
+	at org.hibernate.boot.model.internal.CollectionSecondPass.doSecondPass(CollectionSecondPass.java:45) ~[hibernate-core-6.2.5.Final.jar:6.2.5.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processSecondPasses(InFlightMetadataCollectorImpl.java:1857) ~[hibernate-core-6.2.5.Final.jar:6.2.5.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processSecondPasses(InFlightMetadataCollectorImpl.java:1814) ~[hibernate-core-6.2.5.Final.jar:6.2.5.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:328) ~[hibernate-core-6.2.5.Final.jar:6.2.5.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1380) ~[hibernate-core-6.2.5.Final.jar:6.2.5.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1451) ~[hibernate-core-6.2.5.Final.jar:6.2.5.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75) ~[spring-orm-6.0.10.jar:6.0.10]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:376) ~[spring-orm-6.0.10.jar:6.0.10]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-6.0.10.jar:6.0.10]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-6.0.10.jar:6.0.10]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:352) ~[spring-orm-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1816) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1766) ~[spring-beans-6.0.10.jar:6.0.10]
+	... 19 common frames omitted
+
+2024-02-15T12:54:10.321+05:30  INFO 34124 --- [restartedMain] com.masai.SwiggyApplication              : Starting SwiggyApplication using Java 19.0.2 with PID 34124 (C:\Users\mozak\OneDrive\Desktop\Masai Problem Setting\Swiggy\target\classes started by mozak in C:\Users\mozak\OneDrive\Desktop\Masai Problem Setting\Swiggy)
+2024-02-15T12:54:10.323+05:30  INFO 34124 --- [restartedMain] com.masai.SwiggyApplication              : No active profile set, falling back to 1 default profile: "default"
+2024-02-15T12:54:10.391+05:30  INFO 34124 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-02-15T12:54:10.391+05:30  INFO 34124 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-02-15T12:54:11.303+05:30  INFO 34124 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-02-15T12:54:11.380+05:30  INFO 34124 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 67 ms. Found 5 JPA repository interfaces.
+2024-02-15T12:54:12.157+05:30  INFO 34124 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2024-02-15T12:54:12.169+05:30  INFO 34124 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-15T12:54:12.169+05:30  INFO 34124 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2024-02-15T12:54:12.232+05:30  INFO 34124 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-15T12:54:12.233+05:30  INFO 34124 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1840 ms
+2024-02-15T12:54:12.421+05:30  INFO 34124 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-02-15T12:54:12.500+05:30  INFO 34124 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.5.Final
+2024-02-15T12:54:12.504+05:30  INFO 34124 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2024-02-15T12:54:12.630+05:30  INFO 34124 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2024-02-15T12:54:12.756+05:30  INFO 34124 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-02-15T12:54:12.770+05:30  INFO 34124 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-02-15T12:54:13.050+05:30  INFO 34124 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6150e077
+2024-02-15T12:54:13.052+05:30  INFO 34124 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-02-15T12:54:13.228+05:30  WARN 34124 --- [restartedMain] o.h.b.model.internal.AnnotationBinder    : HHH000503: A class should not be annotated with both @Inheritance and @MappedSuperclass. @Inheritance will be ignored for: com.masai.model.User.
+2024-02-15T12:54:13.443+05:30  INFO 34124 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2024-02-15T12:54:14.105+05:30  INFO 34124 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-02-15T12:54:14.730+05:30  INFO 34124 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-02-15T12:54:14.923+05:30  WARN 34124 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-02-15T12:54:16.598+05:30  WARN 34124 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userRepository' defined in com.masai.repository.UserRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Could not create query for public abstract java.util.Optional com.masai.repository.UserRepository.findByUsername(java.lang.String); Reason: Failed to create query for method public abstract java.util.Optional com.masai.repository.UserRepository.findByUsername(java.lang.String); Not an entity: com.masai.model.User
+2024-02-15T12:54:16.599+05:30  INFO 34124 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-02-15T12:54:16.604+05:30  INFO 34124 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-02-15T12:54:16.615+05:30  INFO 34124 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-02-15T12:54:16.618+05:30  INFO 34124 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-02-15T12:54:16.639+05:30  INFO 34124 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-02-15T12:54:16.674+05:30 ERROR 34124 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userRepository' defined in com.masai.repository.UserRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Could not create query for public abstract java.util.Optional com.masai.repository.UserRepository.findByUsername(java.lang.String); Reason: Failed to create query for method public abstract java.util.Optional com.masai.repository.UserRepository.findByUsername(java.lang.String); Not an entity: com.masai.model.User
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1770) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:967) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:941) ~[spring-context-6.0.10.jar:6.0.10]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608) ~[spring-context-6.0.10.jar:6.0.10]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.1.1.jar:3.1.1]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-3.1.1.jar:3.1.1]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:436) ~[spring-boot-3.1.1.jar:3.1.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312) ~[spring-boot-3.1.1.jar:3.1.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-3.1.1.jar:3.1.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-3.1.1.jar:3.1.1]
+	at com.masai.SwiggyApplication.main(SwiggyApplication.java:9) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.1.1.jar:3.1.1]
+Caused by: org.springframework.data.repository.query.QueryCreationException: Could not create query for public abstract java.util.Optional com.masai.repository.UserRepository.findByUsername(java.lang.String); Reason: Failed to create query for method public abstract java.util.Optional com.masai.repository.UserRepository.findByUsername(java.lang.String); Not an entity: com.masai.model.User
+	at org.springframework.data.repository.query.QueryCreationException.create(QueryCreationException.java:101) ~[spring-data-commons-3.1.1.jar:3.1.1]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lookupQuery(QueryExecutorMethodInterceptor.java:115) ~[spring-data-commons-3.1.1.jar:3.1.1]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.mapMethodsToQuery(QueryExecutorMethodInterceptor.java:99) ~[spring-data-commons-3.1.1.jar:3.1.1]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lambda$new$0(QueryExecutorMethodInterceptor.java:88) ~[spring-data-commons-3.1.1.jar:3.1.1]
+	at java.base/java.util.Optional.map(Optional.java:260) ~[na:na]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.<init>(QueryExecutorMethodInterceptor.java:88) ~[spring-data-commons-3.1.1.jar:3.1.1]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:357) ~[spring-data-commons-3.1.1.jar:3.1.1]
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.lambda$afterPropertiesSet$5(RepositoryFactoryBeanSupport.java:279) ~[spring-data-commons-3.1.1.jar:3.1.1]
+	at org.springframework.data.util.Lazy.getNullable(Lazy.java:245) ~[spring-data-commons-3.1.1.jar:3.1.1]
+	at org.springframework.data.util.Lazy.get(Lazy.java:114) ~[spring-data-commons-3.1.1.jar:3.1.1]
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.afterPropertiesSet(RepositoryFactoryBeanSupport.java:285) ~[spring-data-commons-3.1.1.jar:3.1.1]
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean.afterPropertiesSet(JpaRepositoryFactoryBean.java:132) ~[spring-data-jpa-3.1.1.jar:3.1.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1816) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1766) ~[spring-beans-6.0.10.jar:6.0.10]
+	... 19 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Failed to create query for method public abstract java.util.Optional com.masai.repository.UserRepository.findByUsername(java.lang.String); Not an entity: com.masai.model.User
+	at org.springframework.data.jpa.repository.query.PartTreeJpaQuery.<init>(PartTreeJpaQuery.java:107) ~[spring-data-jpa-3.1.1.jar:3.1.1]
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$CreateQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:124) ~[spring-data-jpa-3.1.1.jar:3.1.1]
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$CreateIfNotFoundQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:258) ~[spring-data-jpa-3.1.1.jar:3.1.1]
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$AbstractQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:95) ~[spring-data-jpa-3.1.1.jar:3.1.1]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lookupQuery(QueryExecutorMethodInterceptor.java:111) ~[spring-data-commons-3.1.1.jar:3.1.1]
+	... 31 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Not an entity: com.masai.model.User
+	at org.hibernate.metamodel.model.domain.internal.JpaMetamodelImpl.entity(JpaMetamodelImpl.java:203) ~[hibernate-core-6.2.5.Final.jar:6.2.5.Final]
+	at org.hibernate.query.sqm.tree.select.AbstractSqmSelectQuery.from(AbstractSqmSelectQuery.java:218) ~[hibernate-core-6.2.5.Final.jar:6.2.5.Final]
+	at org.hibernate.query.sqm.tree.select.AbstractSqmSelectQuery.from(AbstractSqmSelectQuery.java:42) ~[hibernate-core-6.2.5.Final.jar:6.2.5.Final]
+	at org.springframework.data.jpa.repository.query.JpaQueryCreator.<init>(JpaQueryCreator.java:88) ~[spring-data-jpa-3.1.1.jar:3.1.1]
+	at org.springframework.data.jpa.repository.query.JpaCountQueryCreator.<init>(JpaCountQueryCreator.java:52) ~[spring-data-jpa-3.1.1.jar:3.1.1]
+	at org.springframework.data.jpa.repository.query.PartTreeJpaQuery$CountQueryPreparer.createCreator(PartTreeJpaQuery.java:378) ~[spring-data-jpa-3.1.1.jar:3.1.1]
+	at org.springframework.data.jpa.repository.query.PartTreeJpaQuery$QueryPreparer.<init>(PartTreeJpaQuery.java:212) ~[spring-data-jpa-3.1.1.jar:3.1.1]
+	at org.springframework.data.jpa.repository.query.PartTreeJpaQuery$CountQueryPreparer.<init>(PartTreeJpaQuery.java:361) ~[spring-data-jpa-3.1.1.jar:3.1.1]
+	at org.springframework.data.jpa.repository.query.PartTreeJpaQuery.<init>(PartTreeJpaQuery.java:102) ~[spring-data-jpa-3.1.1.jar:3.1.1]
+	... 35 common frames omitted
+
+2024-02-15T12:54:54.836+05:30  INFO 35220 --- [restartedMain] com.masai.SwiggyApplication              : Starting SwiggyApplication using Java 19.0.2 with PID 35220 (C:\Users\mozak\OneDrive\Desktop\Masai Problem Setting\Swiggy\target\classes started by mozak in C:\Users\mozak\OneDrive\Desktop\Masai Problem Setting\Swiggy)
+2024-02-15T12:54:54.838+05:30  INFO 35220 --- [restartedMain] com.masai.SwiggyApplication              : No active profile set, falling back to 1 default profile: "default"
+2024-02-15T12:54:54.906+05:30  INFO 35220 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-02-15T12:54:54.907+05:30  INFO 35220 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-02-15T12:54:55.815+05:30  INFO 35220 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-02-15T12:54:55.891+05:30  INFO 35220 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 64 ms. Found 4 JPA repository interfaces.
+2024-02-15T12:54:56.744+05:30  INFO 35220 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2024-02-15T12:54:56.756+05:30  INFO 35220 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-15T12:54:56.757+05:30  INFO 35220 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2024-02-15T12:54:56.826+05:30  INFO 35220 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-15T12:54:56.827+05:30  INFO 35220 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1920 ms
+2024-02-15T12:54:57.045+05:30  INFO 35220 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-02-15T12:54:57.106+05:30  INFO 35220 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.5.Final
+2024-02-15T12:54:57.108+05:30  INFO 35220 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2024-02-15T12:54:57.243+05:30  INFO 35220 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2024-02-15T12:54:57.376+05:30  INFO 35220 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-02-15T12:54:57.389+05:30  INFO 35220 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-02-15T12:54:57.666+05:30  INFO 35220 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5c8cecec
+2024-02-15T12:54:57.668+05:30  INFO 35220 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-02-15T12:54:57.817+05:30  WARN 35220 --- [restartedMain] o.h.b.model.internal.AnnotationBinder    : HHH000503: A class should not be annotated with both @Inheritance and @MappedSuperclass. @Inheritance will be ignored for: com.masai.model.User.
+2024-02-15T12:54:58.057+05:30  INFO 35220 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2024-02-15T12:54:58.771+05:30  INFO 35220 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-02-15T12:54:58.909+05:30  INFO 35220 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-02-15T12:54:59.107+05:30  WARN 35220 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-02-15T12:55:00.977+05:30  WARN 35220 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 1df6054e-b5ae-4cf3-9848-8dcc9360aea5
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-02-15T12:55:01.160+05:30  INFO 35220 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@10d5e656, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5189f86a, org.springframework.security.web.context.SecurityContextHolderFilter@2eb502e8, org.springframework.security.web.header.HeaderWriterFilter@1317c9ef, org.springframework.security.web.csrf.CsrfFilter@31c47607, org.springframework.security.web.authentication.logout.LogoutFilter@7c5e5935, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@262c4218, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@756d95e9, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@2e11e352, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@60d43927, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7e899f79, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6b0e9c20, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7a8fa97, org.springframework.security.web.access.ExceptionTranslationFilter@76adddb3, org.springframework.security.web.access.intercept.AuthorizationFilter@67af7390]
+2024-02-15T12:55:01.239+05:30  INFO 35220 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-02-15T12:55:01.294+05:30  INFO 35220 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2024-02-15T12:55:01.310+05:30  INFO 35220 --- [restartedMain] com.masai.SwiggyApplication              : Started SwiggyApplication in 6.927 seconds (process running for 7.488)
+2024-02-15T13:13:54.430+05:30  INFO 35220 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 30 class path changes (0 additions, 0 deletions, 30 modifications)
+2024-02-15T13:13:54.449+05:30  INFO 35220 --- [Thread-5] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-02-15T13:13:54.458+05:30  INFO 35220 --- [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-02-15T13:13:54.463+05:30  INFO 35220 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-02-15T13:13:54.484+05:30  INFO 35220 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-02-15T13:13:54.569+05:30  INFO 35220 --- [restartedMain] com.masai.SwiggyApplication              : Starting SwiggyApplication using Java 19.0.2 with PID 35220 (C:\Users\mozak\OneDrive\Desktop\Masai Problem Setting\Swiggy\target\classes started by mozak in C:\Users\mozak\OneDrive\Desktop\Masai Problem Setting\Swiggy)
+2024-02-15T13:13:54.569+05:30  INFO 35220 --- [restartedMain] com.masai.SwiggyApplication              : No active profile set, falling back to 1 default profile: "default"
+2024-02-15T13:13:54.907+05:30  INFO 35220 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-02-15T13:13:54.949+05:30  INFO 35220 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 41 ms. Found 4 JPA repository interfaces.
+2024-02-15T13:13:55.125+05:30  INFO 35220 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2024-02-15T13:13:55.128+05:30  INFO 35220 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-15T13:13:55.128+05:30  INFO 35220 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2024-02-15T13:13:55.206+05:30  INFO 35220 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-15T13:13:55.207+05:30  INFO 35220 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 634 ms
+2024-02-15T13:13:55.340+05:30  INFO 35220 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-02-15T13:13:55.351+05:30  INFO 35220 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2024-02-15T13:13:55.352+05:30  INFO 35220 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-02-15T13:13:55.354+05:30  INFO 35220 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2024-02-15T13:13:55.381+05:30  INFO 35220 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@b1f4e54
+2024-02-15T13:13:55.382+05:30  INFO 35220 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2024-02-15T13:13:55.387+05:30  WARN 35220 --- [restartedMain] o.h.b.model.internal.AnnotationBinder    : HHH000503: A class should not be annotated with both @Inheritance and @MappedSuperclass. @Inheritance will be ignored for: com.masai.model.User.
+2024-02-15T13:13:55.430+05:30  INFO 35220 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2024-02-15T13:13:55.587+05:30  INFO 35220 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-02-15T13:13:55.645+05:30  INFO 35220 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-02-15T13:13:55.715+05:30  WARN 35220 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-02-15T13:13:56.408+05:30  WARN 35220 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 8eae8267-5452-4c23-8275-179616f06240
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-02-15T13:13:56.426+05:30  INFO 35220 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@589bbfd4, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@385d9bd9, org.springframework.security.web.context.SecurityContextHolderFilter@18a253ef, org.springframework.security.web.header.HeaderWriterFilter@54bb13fa, org.springframework.security.web.csrf.CsrfFilter@778e5368, org.springframework.security.web.authentication.logout.LogoutFilter@7a8379c3, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@11bd8791, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@7fbdbe97, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@45a1124c, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@7011b904, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1db24680, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@731547cc, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@38855a65, org.springframework.security.web.access.ExceptionTranslationFilter@6850d321, org.springframework.security.web.access.intercept.AuthorizationFilter@312a3197]
+2024-02-15T13:13:56.444+05:30  INFO 35220 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-02-15T13:13:56.455+05:30  INFO 35220 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2024-02-15T13:13:56.460+05:30  INFO 35220 --- [restartedMain] com.masai.SwiggyApplication              : Started SwiggyApplication in 1.927 seconds (process running for 1142.638)
+2024-02-15T13:13:56.464+05:30  INFO 35220 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-02-15T13:13:59.961+05:30  INFO 41804 --- [main] com.masai.SwiggyApplicationTests         : Starting SwiggyApplicationTests using Java 19.0.2 with PID 41804 (started by mozak in C:\Users\mozak\OneDrive\Desktop\Masai Problem Setting\Swiggy)
+2024-02-15T13:13:59.964+05:30  INFO 41804 --- [main] com.masai.SwiggyApplicationTests         : No active profile set, falling back to 1 default profile: "default"
+2024-02-15T13:14:01.383+05:30  INFO 41804 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-02-15T13:14:01.511+05:30  INFO 41804 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 102 ms. Found 4 JPA repository interfaces.
+2024-02-15T13:14:02.286+05:30  INFO 41804 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-02-15T13:14:02.419+05:30  INFO 41804 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.5.Final
+2024-02-15T13:14:02.424+05:30  INFO 41804 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2024-02-15T13:14:02.625+05:30  INFO 41804 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2024-02-15T13:14:02.638+05:30  INFO 41804 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-02-15T13:14:02.659+05:30  INFO 41804 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-02-15T13:14:03.168+05:30  INFO 41804 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6942ee48
+2024-02-15T13:14:03.171+05:30  INFO 41804 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-02-15T13:14:03.397+05:30  WARN 41804 --- [main] o.h.b.model.internal.AnnotationBinder    : HHH000503: A class should not be annotated with both @Inheritance and @MappedSuperclass. @Inheritance will be ignored for: com.masai.model.User.
+2024-02-15T13:14:03.673+05:30  INFO 41804 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2024-02-15T13:14:04.447+05:30  INFO 41804 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-02-15T13:14:04.597+05:30  INFO 41804 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-02-15T13:14:04.958+05:30  WARN 41804 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-02-15T13:14:07.015+05:30  WARN 41804 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 56beafd3-5642-4e9e-8fc0-e24d47f1e8b9
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-02-15T13:14:07.214+05:30  INFO 41804 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4b90a402, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@67fdc1e9, org.springframework.security.web.context.SecurityContextHolderFilter@318d69ea, org.springframework.security.web.header.HeaderWriterFilter@7bb78381, org.springframework.security.web.csrf.CsrfFilter@78854721, org.springframework.security.web.authentication.logout.LogoutFilter@4f75c627, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4f63219e, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@6da76bb1, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@33a38f07, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@482c8db4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1a2b23f2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7882379b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4e7bf371, org.springframework.security.web.access.ExceptionTranslationFilter@3d1703f8, org.springframework.security.web.access.intercept.AuthorizationFilter@21298c3a]
+2024-02-15T13:14:07.292+05:30  INFO 41804 --- [main] com.masai.SwiggyApplicationTests         : Started SwiggyApplicationTests in 7.924 seconds (process running for 10.519)
+2024-02-15T13:14:07.414+05:30  INFO 41804 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-02-15T13:14:07.419+05:30  INFO 41804 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-02-15T13:14:07.434+05:30  INFO 41804 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-02-15T13:52:44.465+05:30  WARN 35220 --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=35m48s935ms263µs300ns).
+2024-02-15T13:55:36.960+05:30  INFO 35220 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 30 class path changes (0 additions, 0 deletions, 30 modifications)
+2024-02-15T13:55:36.972+05:30  INFO 35220 --- [Thread-7] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-02-15T13:55:36.977+05:30  INFO 35220 --- [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-02-15T13:55:36.978+05:30  INFO 35220 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2024-02-15T13:55:36.984+05:30  INFO 35220 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2024-02-15T13:55:37.057+05:30  INFO 35220 --- [restartedMain] com.masai.SwiggyApplication              : Starting SwiggyApplication using Java 19.0.2 with PID 35220 (C:\Users\mozak\OneDrive\Desktop\Masai Problem Setting\Swiggy\target\classes started by mozak in C:\Users\mozak\OneDrive\Desktop\Masai Problem Setting\Swiggy)
+2024-02-15T13:55:37.058+05:30  INFO 35220 --- [restartedMain] com.masai.SwiggyApplication              : No active profile set, falling back to 1 default profile: "default"
+2024-02-15T13:55:37.409+05:30  INFO 35220 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-02-15T13:55:37.462+05:30  INFO 35220 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 52 ms. Found 4 JPA repository interfaces.
+2024-02-15T13:55:37.636+05:30  INFO 35220 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2024-02-15T13:55:37.637+05:30  INFO 35220 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-15T13:55:37.637+05:30  INFO 35220 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2024-02-15T13:55:37.675+05:30  INFO 35220 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-15T13:55:37.675+05:30  INFO 35220 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 615 ms
+2024-02-15T13:55:37.747+05:30  INFO 35220 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-02-15T13:55:37.761+05:30  INFO 35220 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2024-02-15T13:55:37.761+05:30  INFO 35220 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-02-15T13:55:37.762+05:30  INFO 35220 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2024-02-15T13:55:37.778+05:30  INFO 35220 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4fc1ae95
+2024-02-15T13:55:37.778+05:30  INFO 35220 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2024-02-15T13:55:37.781+05:30  WARN 35220 --- [restartedMain] o.h.b.model.internal.AnnotationBinder    : HHH000503: A class should not be annotated with both @Inheritance and @MappedSuperclass. @Inheritance will be ignored for: com.masai.model.User.
+2024-02-15T13:55:37.806+05:30  INFO 35220 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2024-02-15T13:55:37.911+05:30  INFO 35220 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-02-15T13:55:37.992+05:30  INFO 35220 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-02-15T13:55:38.048+05:30  WARN 35220 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-02-15T13:55:39.148+05:30  WARN 35220 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 769fa37a-69ef-4f1c-beb2-54e74d6ac4d8
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-02-15T13:55:39.168+05:30  INFO 35220 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1afb4aad, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@50b72532, org.springframework.security.web.context.SecurityContextHolderFilter@688192b, org.springframework.security.web.header.HeaderWriterFilter@464a2cac, org.springframework.security.web.csrf.CsrfFilter@1862dc56, org.springframework.security.web.authentication.logout.LogoutFilter@7497605, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1e217b8f, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@7e59a39a, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@455fd1a8, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@5214df10, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@806e5c0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@69e1cd46, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@31c76a4c, org.springframework.security.web.access.ExceptionTranslationFilter@3ebbf7b9, org.springframework.security.web.access.intercept.AuthorizationFilter@53d33aaa]
+2024-02-15T13:55:39.184+05:30  INFO 35220 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-02-15T13:55:39.204+05:30  INFO 35220 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2024-02-15T13:55:39.212+05:30  INFO 35220 --- [restartedMain] com.masai.SwiggyApplication              : Started SwiggyApplication in 2.18 seconds (process running for 3645.389)
+2024-02-15T13:55:39.215+05:30  INFO 35220 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-02-15T13:55:43.774+05:30  INFO 22676 --- [main] com.masai.SwiggyApplicationTests         : Starting SwiggyApplicationTests using Java 19.0.2 with PID 22676 (started by mozak in C:\Users\mozak\OneDrive\Desktop\Masai Problem Setting\Swiggy)
+2024-02-15T13:55:43.776+05:30  INFO 22676 --- [main] com.masai.SwiggyApplicationTests         : No active profile set, falling back to 1 default profile: "default"
+2024-02-15T13:55:45.135+05:30  INFO 22676 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-02-15T13:55:45.248+05:30  INFO 22676 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 103 ms. Found 4 JPA repository interfaces.
+2024-02-15T13:55:46.088+05:30  INFO 22676 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-02-15T13:55:46.233+05:30  INFO 22676 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.5.Final
+2024-02-15T13:55:46.238+05:30  INFO 22676 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2024-02-15T13:55:46.519+05:30  INFO 22676 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2024-02-15T13:55:46.538+05:30  INFO 22676 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-02-15T13:55:46.573+05:30  INFO 22676 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-02-15T13:55:47.216+05:30  INFO 22676 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1203d787
+2024-02-15T13:55:47.219+05:30  INFO 22676 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-02-15T13:55:47.966+05:30  WARN 22676 --- [main] o.h.b.model.internal.AnnotationBinder    : HHH000503: A class should not be annotated with both @Inheritance and @MappedSuperclass. @Inheritance will be ignored for: com.masai.model.User.
+2024-02-15T13:55:48.358+05:30  INFO 22676 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2024-02-15T13:55:49.220+05:30  INFO 22676 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-02-15T13:55:49.363+05:30  INFO 22676 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-02-15T13:55:49.724+05:30  WARN 22676 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-02-15T13:55:51.959+05:30  WARN 22676 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: b57aaf9a-88e3-4ec0-95dd-e13af14127bf
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-02-15T13:55:52.164+05:30  INFO 22676 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@68ecc60e, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@24bc52ce, org.springframework.security.web.context.SecurityContextHolderFilter@578cd644, org.springframework.security.web.header.HeaderWriterFilter@63b0aeb1, org.springframework.security.web.csrf.CsrfFilter@241861bc, org.springframework.security.web.authentication.logout.LogoutFilter@2d492d46, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7882379b, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@78854721, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@40949bb0, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@5ab2c5d8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6c418f0b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@21dd405a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@70028163, org.springframework.security.web.access.ExceptionTranslationFilter@2197990b, org.springframework.security.web.access.intercept.AuthorizationFilter@3b75b7b4]
+2024-02-15T13:55:52.278+05:30  INFO 22676 --- [main] com.masai.SwiggyApplicationTests         : Started SwiggyApplicationTests in 8.96 seconds (process running for 12.946)
+2024-02-15T13:55:52.408+05:30  INFO 22676 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-02-15T13:55:52.412+05:30  INFO 22676 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-02-15T13:55:52.445+05:30  INFO 22676 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-02-15T13:57:35.944+05:30  INFO 35220 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 31 class path changes (0 additions, 30 deletions, 1 modification)
+2024-02-15T13:57:35.956+05:30  INFO 35220 --- [Thread-11] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-02-15T13:57:35.960+05:30  INFO 35220 --- [Thread-11] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-02-15T13:57:35.961+05:30  INFO 35220 --- [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2024-02-15T13:57:35.966+05:30  INFO 35220 --- [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2024-02-15T13:57:36.038+05:30  INFO 35220 --- [restartedMain] com.masai.SwiggyApplication              : Starting SwiggyApplication using Java 19.0.2 with PID 35220 (C:\Users\mozak\OneDrive\Desktop\Masai Problem Setting\Swiggy\target\classes started by mozak in C:\Users\mozak\OneDrive\Desktop\Masai Problem Setting\Swiggy)
+2024-02-15T13:57:36.039+05:30  INFO 35220 --- [restartedMain] com.masai.SwiggyApplication              : No active profile set, falling back to 1 default profile: "default"
+2024-02-15T13:57:36.265+05:30  INFO 35220 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-02-15T13:57:36.266+05:30  INFO 35220 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 0 ms. Found 0 JPA repository interfaces.
+2024-02-15T13:57:36.351+05:30  INFO 35220 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2024-02-15T13:57:36.351+05:30  INFO 35220 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-15T13:57:36.352+05:30  INFO 35220 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2024-02-15T13:57:36.379+05:30  INFO 35220 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-15T13:57:36.379+05:30  INFO 35220 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 339 ms
+2024-02-15T13:57:36.416+05:30  INFO 35220 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-02-15T13:57:36.424+05:30  INFO 35220 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2024-02-15T13:57:36.424+05:30  INFO 35220 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-02-15T13:57:36.425+05:30  INFO 35220 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2024-02-15T13:57:36.439+05:30  INFO 35220 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@598958c3
+2024-02-15T13:57:36.440+05:30  INFO 35220 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2024-02-15T13:57:36.444+05:30  INFO 35220 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2024-02-15T13:57:36.456+05:30  INFO 35220 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-02-15T13:57:36.457+05:30  INFO 35220 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-02-15T13:57:36.485+05:30  WARN 35220 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-02-15T13:57:36.804+05:30  WARN 35220 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: cd451fb8-018d-4979-932b-6f6b38bb6123
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-02-15T13:57:36.820+05:30  INFO 35220 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@67b4f019, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@15448810, org.springframework.security.web.context.SecurityContextHolderFilter@6a0a3f9e, org.springframework.security.web.header.HeaderWriterFilter@58644b1e, org.springframework.security.web.csrf.CsrfFilter@4ab87f39, org.springframework.security.web.authentication.logout.LogoutFilter@d7a3752, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@43bbef31, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@43222567, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@91a3fee, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@1fa780b3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@63c2d451, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3964b5ee, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2a1b8466, org.springframework.security.web.access.ExceptionTranslationFilter@4f72a1d6, org.springframework.security.web.access.intercept.AuthorizationFilter@43f63e89]
+2024-02-15T13:57:36.827+05:30  INFO 35220 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-02-15T13:57:36.833+05:30  INFO 35220 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2024-02-15T13:57:36.836+05:30  INFO 35220 --- [restartedMain] com.masai.SwiggyApplication              : Started SwiggyApplication in 0.825 seconds (process running for 3763.013)
+2024-02-15T13:57:36.837+05:30  INFO 35220 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-02-15T13:57:39.281+05:30  INFO 35220 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 30 class path changes (30 additions, 0 deletions, 0 modifications)
+2024-02-15T13:57:39.291+05:30  INFO 35220 --- [Thread-15] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-02-15T13:57:39.295+05:30  INFO 35220 --- [Thread-15] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-02-15T13:57:39.295+05:30  INFO 35220 --- [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2024-02-15T13:57:39.300+05:30  INFO 35220 --- [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2024-02-15T13:57:39.376+05:30  INFO 35220 --- [restartedMain] com.masai.SwiggyApplication              : Starting SwiggyApplication using Java 19.0.2 with PID 35220 (C:\Users\mozak\OneDrive\Desktop\Masai Problem Setting\Swiggy\target\classes started by mozak in C:\Users\mozak\OneDrive\Desktop\Masai Problem Setting\Swiggy)
+2024-02-15T13:57:39.377+05:30  INFO 35220 --- [restartedMain] com.masai.SwiggyApplication              : No active profile set, falling back to 1 default profile: "default"
+2024-02-15T13:57:39.615+05:30  INFO 35220 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-02-15T13:57:39.642+05:30  INFO 35220 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 26 ms. Found 4 JPA repository interfaces.
+2024-02-15T13:57:39.704+05:30  INFO 35220 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2024-02-15T13:57:39.705+05:30  INFO 35220 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-15T13:57:39.705+05:30  INFO 35220 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2024-02-15T13:57:39.729+05:30  INFO 35220 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-15T13:57:39.729+05:30  INFO 35220 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 350 ms
+2024-02-15T13:57:39.762+05:30  INFO 35220 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-02-15T13:57:39.768+05:30  INFO 35220 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2024-02-15T13:57:39.768+05:30  INFO 35220 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-02-15T13:57:39.768+05:30  INFO 35220 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2024-02-15T13:57:39.778+05:30  INFO 35220 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-5 - Added connection com.mysql.cj.jdbc.ConnectionImpl@256862c5
+2024-02-15T13:57:39.778+05:30  INFO 35220 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2024-02-15T13:57:39.780+05:30  WARN 35220 --- [restartedMain] o.h.b.model.internal.AnnotationBinder    : HHH000503: A class should not be annotated with both @Inheritance and @MappedSuperclass. @Inheritance will be ignored for: com.masai.model.User.
+2024-02-15T13:57:39.793+05:30  INFO 35220 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2024-02-15T13:57:39.851+05:30  INFO 35220 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-02-15T13:57:39.896+05:30  INFO 35220 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-02-15T13:57:39.921+05:30  WARN 35220 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-02-15T13:57:40.310+05:30  WARN 35220 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: f5559f72-0761-4e0c-bd2d-b36ae4294c11
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-02-15T13:57:40.319+05:30  INFO 35220 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7689a2ac, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@60e72232, org.springframework.security.web.context.SecurityContextHolderFilter@26379b3, org.springframework.security.web.header.HeaderWriterFilter@2121d2c2, org.springframework.security.web.csrf.CsrfFilter@23cfc4eb, org.springframework.security.web.authentication.logout.LogoutFilter@333f449e, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@52288196, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@45dd7f3f, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@76d53b89, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@1b7a24f9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5f560d88, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6ac50767, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3c428446, org.springframework.security.web.access.ExceptionTranslationFilter@481fa732, org.springframework.security.web.access.intercept.AuthorizationFilter@5f892e29]
+2024-02-15T13:57:40.328+05:30  INFO 35220 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-02-15T13:57:40.337+05:30  INFO 35220 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2024-02-15T13:57:40.340+05:30  INFO 35220 --- [restartedMain] com.masai.SwiggyApplication              : Started SwiggyApplication in 0.988 seconds (process running for 3766.517)
+2024-02-15T13:57:40.341+05:30  INFO 35220 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-02-15T14:11:34.926+05:30  INFO 40508 --- [main] com.masai.SwiggyApplicationTests         : Starting SwiggyApplicationTests using Java 19.0.2 with PID 40508 (started by mozak in C:\Users\mozak\OneDrive\Desktop\Masai Problem Setting\Swiggy)
+2024-02-15T14:11:34.928+05:30  INFO 40508 --- [main] com.masai.SwiggyApplicationTests         : No active profile set, falling back to 1 default profile: "default"
+2024-02-15T14:11:35.850+05:30  INFO 40508 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-02-15T14:11:35.919+05:30  INFO 40508 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 60 ms. Found 4 JPA repository interfaces.
+2024-02-15T14:11:36.455+05:30  INFO 40508 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-02-15T14:11:36.532+05:30  INFO 40508 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.5.Final
+2024-02-15T14:11:36.534+05:30  INFO 40508 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2024-02-15T14:11:36.734+05:30  INFO 40508 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2024-02-15T14:11:36.880+05:30  INFO 40508 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-02-15T14:11:36.897+05:30  INFO 40508 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-02-15T14:11:37.254+05:30  INFO 40508 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@44abdb1f
+2024-02-15T14:11:37.257+05:30  INFO 40508 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-02-15T14:11:37.397+05:30  WARN 40508 --- [main] o.h.b.model.internal.AnnotationBinder    : HHH000503: A class should not be annotated with both @Inheritance and @MappedSuperclass. @Inheritance will be ignored for: com.masai.model.User.
+2024-02-15T14:11:37.635+05:30  INFO 40508 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2024-02-15T14:11:38.382+05:30  INFO 40508 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-02-15T14:11:38.493+05:30  INFO 40508 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-02-15T14:11:38.783+05:30  WARN 40508 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-02-15T14:11:40.139+05:30  WARN 40508 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 3999f179-78c1-4858-bb4c-71ffd0a3d15d
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-02-15T14:11:40.268+05:30  INFO 40508 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@71d0ad00, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@56c7e2d1, org.springframework.security.web.context.SecurityContextHolderFilter@7a8e35d1, org.springframework.security.web.header.HeaderWriterFilter@27ea7c8f, org.springframework.security.web.csrf.CsrfFilter@786de0a3, org.springframework.security.web.authentication.logout.LogoutFilter@3304362e, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@b2db8bc, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@65a7bc80, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@2e549515, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@6238b10a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1aade3c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@e763080, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2c34ce24, org.springframework.security.web.access.ExceptionTranslationFilter@34e7a627, org.springframework.security.web.access.intercept.AuthorizationFilter@e00c94e]
+2024-02-15T14:11:40.354+05:30  INFO 40508 --- [main] com.masai.SwiggyApplicationTests         : Started SwiggyApplicationTests in 5.733 seconds (process running for 6.839)
+2024-02-15T14:11:41.119+05:30  INFO 40508 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-02-15T14:11:41.122+05:30  INFO 40508 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-02-15T14:11:41.134+05:30  INFO 40508 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-02-15T14:13:29.258+05:30  INFO 19180 --- [main] com.masai.SwiggyApplicationTests         : Starting SwiggyApplicationTests using Java 19.0.2 with PID 19180 (started by mozak in C:\Users\mozak\OneDrive\Desktop\Masai Problem Setting\Swiggy)
+2024-02-15T14:13:29.260+05:30  INFO 19180 --- [main] com.masai.SwiggyApplicationTests         : No active profile set, falling back to 1 default profile: "default"
+2024-02-15T14:13:30.095+05:30  INFO 19180 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-02-15T14:13:30.174+05:30  INFO 19180 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 69 ms. Found 4 JPA repository interfaces.
+2024-02-15T14:13:30.764+05:30  INFO 19180 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-02-15T14:13:30.844+05:30  INFO 19180 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.5.Final
+2024-02-15T14:13:30.852+05:30  INFO 19180 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2024-02-15T14:13:31.075+05:30  INFO 19180 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2024-02-15T14:13:31.232+05:30  INFO 19180 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-02-15T14:13:31.249+05:30  INFO 19180 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-02-15T14:13:31.596+05:30  INFO 19180 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4b98225c
+2024-02-15T14:13:31.597+05:30  INFO 19180 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-02-15T14:13:31.718+05:30  WARN 19180 --- [main] o.h.b.model.internal.AnnotationBinder    : HHH000503: A class should not be annotated with both @Inheritance and @MappedSuperclass. @Inheritance will be ignored for: com.masai.model.User.
+2024-02-15T14:13:31.970+05:30  INFO 19180 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2024-02-15T14:13:32.742+05:30  INFO 19180 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-02-15T14:13:32.850+05:30  INFO 19180 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-02-15T14:13:33.131+05:30  WARN 19180 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-02-15T14:13:34.482+05:30  WARN 19180 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 74d53410-a633-41f3-afa4-e8a0ae4e7285
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-02-15T14:13:34.610+05:30  INFO 19180 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@c4bb119, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@66075347, org.springframework.security.web.context.SecurityContextHolderFilter@2e871e93, org.springframework.security.web.header.HeaderWriterFilter@218c6d3e, org.springframework.security.web.csrf.CsrfFilter@41fe0d98, org.springframework.security.web.authentication.logout.LogoutFilter@706dee4, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@78b293a, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@1aade3c, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@3b45a3e6, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@1c0ec502, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4f3672eb, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@27ea7c8f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7927209f, org.springframework.security.web.access.ExceptionTranslationFilter@65384249, org.springframework.security.web.access.intercept.AuthorizationFilter@3304362e]
+2024-02-15T14:13:34.674+05:30  INFO 19180 --- [main] com.masai.SwiggyApplicationTests         : Started SwiggyApplicationTests in 5.741 seconds (process running for 6.765)
+2024-02-15T14:13:35.257+05:30  INFO 19180 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-02-15T14:13:35.260+05:30  INFO 19180 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-02-15T14:13:35.269+05:30  INFO 19180 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-02-15T14:13:48.948+05:30  INFO 41500 --- [main] com.masai.SwiggyApplicationTests         : Starting SwiggyApplicationTests using Java 19.0.2 with PID 41500 (started by mozak in C:\Users\mozak\OneDrive\Desktop\Masai Problem Setting\Swiggy)
+2024-02-15T14:13:48.949+05:30  INFO 41500 --- [main] com.masai.SwiggyApplicationTests         : No active profile set, falling back to 1 default profile: "default"
+2024-02-15T14:13:50.238+05:30  INFO 41500 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-02-15T14:13:50.344+05:30  INFO 41500 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 95 ms. Found 4 JPA repository interfaces.
+2024-02-15T14:13:51.113+05:30  INFO 41500 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-02-15T14:13:51.209+05:30  INFO 41500 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.5.Final
+2024-02-15T14:13:51.212+05:30  INFO 41500 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2024-02-15T14:13:51.533+05:30  INFO 41500 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2024-02-15T14:13:51.782+05:30  INFO 41500 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-02-15T14:13:51.807+05:30  INFO 41500 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-02-15T14:13:52.280+05:30  INFO 41500 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@62108cd3
+2024-02-15T14:13:52.283+05:30  INFO 41500 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-02-15T14:13:52.482+05:30  WARN 41500 --- [main] o.h.b.model.internal.AnnotationBinder    : HHH000503: A class should not be annotated with both @Inheritance and @MappedSuperclass. @Inheritance will be ignored for: com.masai.model.User.
+2024-02-15T14:13:52.823+05:30  INFO 41500 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2024-02-15T14:13:53.808+05:30  INFO 41500 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-02-15T14:13:53.941+05:30  INFO 41500 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-02-15T14:13:54.298+05:30  WARN 41500 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-02-15T14:13:56.310+05:30  WARN 41500 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: b766ac80-d39b-4e21-83b8-5768f116cce9
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-02-15T14:13:56.500+05:30  INFO 41500 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@31406eab, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3bb6b9ab, org.springframework.security.web.context.SecurityContextHolderFilter@597a5ead, org.springframework.security.web.header.HeaderWriterFilter@1aade3c, org.springframework.security.web.csrf.CsrfFilter@951053f, org.springframework.security.web.authentication.logout.LogoutFilter@17adbecf, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@66075347, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@1001b435, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@31f90517, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@2e549515, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@21252bef, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@65a7bc80, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2f6f2d91, org.springframework.security.web.access.ExceptionTranslationFilter@7a8e35d1, org.springframework.security.web.access.intercept.AuthorizationFilter@c4bb119]
+2024-02-15T14:13:56.607+05:30  INFO 41500 --- [main] com.masai.SwiggyApplicationTests         : Started SwiggyApplicationTests in 8.084 seconds (process running for 9.119)
+2024-02-15T14:13:57.346+05:30  INFO 41500 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-02-15T14:13:57.349+05:30  INFO 41500 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-02-15T14:13:57.360+05:30  INFO 41500 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-02-15T14:15:01.728+05:30  INFO 23640 --- [main] com.masai.SwiggyApplicationTests         : Starting SwiggyApplicationTests using Java 19.0.2 with PID 23640 (started by mozak in C:\Users\mozak\OneDrive\Desktop\Masai Problem Setting\Swiggy)
+2024-02-15T14:15:01.730+05:30  INFO 23640 --- [main] com.masai.SwiggyApplicationTests         : No active profile set, falling back to 1 default profile: "default"
+2024-02-15T14:15:02.792+05:30  INFO 23640 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-02-15T14:15:02.881+05:30  INFO 23640 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 79 ms. Found 4 JPA repository interfaces.
+2024-02-15T14:15:03.434+05:30  INFO 23640 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-02-15T14:15:03.499+05:30  INFO 23640 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.5.Final
+2024-02-15T14:15:03.502+05:30  INFO 23640 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2024-02-15T14:15:03.717+05:30  INFO 23640 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2024-02-15T14:15:03.919+05:30  INFO 23640 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-02-15T14:15:03.940+05:30  INFO 23640 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-02-15T14:15:04.289+05:30  INFO 23640 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@77ab5214
+2024-02-15T14:15:04.290+05:30  INFO 23640 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-02-15T14:15:04.447+05:30  WARN 23640 --- [main] o.h.b.model.internal.AnnotationBinder    : HHH000503: A class should not be annotated with both @Inheritance and @MappedSuperclass. @Inheritance will be ignored for: com.masai.model.User.
+2024-02-15T14:15:04.681+05:30  INFO 23640 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2024-02-15T14:15:05.402+05:30  INFO 23640 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-02-15T14:15:05.512+05:30  INFO 23640 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-02-15T14:15:05.821+05:30  WARN 23640 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-02-15T14:15:07.754+05:30  WARN 23640 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: f06bed2b-b542-46a6-a78c-a2c661b9df59
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-02-15T14:15:07.989+05:30  INFO 23640 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@225b460a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@26c494d7, org.springframework.security.web.context.SecurityContextHolderFilter@17e31657, org.springframework.security.web.header.HeaderWriterFilter@34e7a627, org.springframework.security.web.csrf.CsrfFilter@19983dd1, org.springframework.security.web.authentication.logout.LogoutFilter@3021e31, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@74214ac3, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@52984065, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@71d0ad00, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@283595db, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7a8e35d1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@76a1cc1a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@56c7e2d1, org.springframework.security.web.access.ExceptionTranslationFilter@4f3672eb, org.springframework.security.web.access.intercept.AuthorizationFilter@31b4c003]
+2024-02-15T14:15:08.088+05:30  INFO 23640 --- [main] com.masai.SwiggyApplicationTests         : Started SwiggyApplicationTests in 6.69 seconds (process running for 7.801)
+2024-02-15T14:15:08.943+05:30  INFO 23640 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-02-15T14:15:08.953+05:30  INFO 23640 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-02-15T14:15:08.969+05:30  INFO 23640 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-02-15T14:15:42.750+05:30  INFO 33148 --- [main] com.masai.SwiggyApplicationTests         : Starting SwiggyApplicationTests using Java 19.0.2 with PID 33148 (started by mozak in C:\Users\mozak\OneDrive\Desktop\Masai Problem Setting\Swiggy)
+2024-02-15T14:15:42.752+05:30  INFO 33148 --- [main] com.masai.SwiggyApplicationTests         : No active profile set, falling back to 1 default profile: "default"
+2024-02-15T14:15:43.658+05:30  INFO 33148 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-02-15T14:15:43.770+05:30  INFO 33148 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 99 ms. Found 4 JPA repository interfaces.
+2024-02-15T14:15:44.564+05:30  INFO 33148 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-02-15T14:15:44.662+05:30  INFO 33148 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.5.Final
+2024-02-15T14:15:44.666+05:30  INFO 33148 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2024-02-15T14:15:44.976+05:30  INFO 33148 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2024-02-15T14:15:45.211+05:30  INFO 33148 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-02-15T14:15:45.235+05:30  INFO 33148 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-02-15T14:15:45.723+05:30  INFO 33148 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@655621fd
+2024-02-15T14:15:45.726+05:30  INFO 33148 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-02-15T14:15:45.926+05:30  WARN 33148 --- [main] o.h.b.model.internal.AnnotationBinder    : HHH000503: A class should not be annotated with both @Inheritance and @MappedSuperclass. @Inheritance will be ignored for: com.masai.model.User.
+2024-02-15T14:15:46.236+05:30  INFO 33148 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2024-02-15T14:15:47.179+05:30  INFO 33148 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-02-15T14:15:47.330+05:30  INFO 33148 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-02-15T14:15:47.716+05:30  WARN 33148 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-02-15T14:15:49.779+05:30  WARN 33148 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 0a5f0eda-9ae1-48af-927a-6fa5606767be
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-02-15T14:15:49.964+05:30  INFO 33148 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5a0f5567, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@106f0051, org.springframework.security.web.context.SecurityContextHolderFilter@59eb987a, org.springframework.security.web.header.HeaderWriterFilter@5b166420, org.springframework.security.web.csrf.CsrfFilter@4b98c80c, org.springframework.security.web.authentication.logout.LogoutFilter@3ce067bd, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7ecca48, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@7927209f, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@4fe687b5, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@3dceec83, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@74214ac3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6287e312, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7a02d760, org.springframework.security.web.access.ExceptionTranslationFilter@78b293a, org.springframework.security.web.access.intercept.AuthorizationFilter@20a434a8]
+2024-02-15T14:15:50.049+05:30  INFO 33148 --- [main] com.masai.SwiggyApplicationTests         : Started SwiggyApplicationTests in 7.623 seconds (process running for 8.694)
+2024-02-15T14:15:50.920+05:30  INFO 33148 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-02-15T14:15:50.925+05:30  INFO 33148 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-02-15T14:15:50.940+05:30  INFO 33148 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-02-15T14:16:35.275+05:30  INFO 42192 --- [main] com.masai.SwiggyApplicationTests         : Starting SwiggyApplicationTests using Java 19.0.2 with PID 42192 (started by mozak in C:\Users\mozak\OneDrive\Desktop\Masai Problem Setting\Swiggy)
+2024-02-15T14:16:35.277+05:30  INFO 42192 --- [main] com.masai.SwiggyApplicationTests         : No active profile set, falling back to 1 default profile: "default"
+2024-02-15T14:16:36.171+05:30  INFO 42192 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-02-15T14:16:36.245+05:30  INFO 42192 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 67 ms. Found 4 JPA repository interfaces.
+2024-02-15T14:16:36.783+05:30  INFO 42192 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-02-15T14:16:36.853+05:30  INFO 42192 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.5.Final
+2024-02-15T14:16:36.856+05:30  INFO 42192 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2024-02-15T14:16:37.075+05:30  INFO 42192 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2024-02-15T14:16:37.219+05:30  INFO 42192 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-02-15T14:16:37.235+05:30  INFO 42192 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-02-15T14:16:37.585+05:30  INFO 42192 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7d61468c
+2024-02-15T14:16:37.588+05:30  INFO 42192 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-02-15T14:16:37.724+05:30  WARN 42192 --- [main] o.h.b.model.internal.AnnotationBinder    : HHH000503: A class should not be annotated with both @Inheritance and @MappedSuperclass. @Inheritance will be ignored for: com.masai.model.User.
+2024-02-15T14:16:37.962+05:30  INFO 42192 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2024-02-15T14:16:38.741+05:30  INFO 42192 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-02-15T14:16:38.865+05:30  INFO 42192 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-02-15T14:16:39.233+05:30  WARN 42192 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-02-15T14:16:41.524+05:30  WARN 42192 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 10f38939-4db4-42c4-aad5-1946f82a7a94
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-02-15T14:16:41.719+05:30  INFO 42192 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3d5b2c1e, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@137a9d69, org.springframework.security.web.context.SecurityContextHolderFilter@102dff25, org.springframework.security.web.header.HeaderWriterFilter@706dee4, org.springframework.security.web.csrf.CsrfFilter@e74300b, org.springframework.security.web.authentication.logout.LogoutFilter@71d0ad00, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@139da216, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@17adbecf, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@12faeada, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@2a8081f5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@76e10574, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3304362e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@73a5cc47, org.springframework.security.web.access.ExceptionTranslationFilter@54972f9a, org.springframework.security.web.access.intercept.AuthorizationFilter@1de83be1]
+2024-02-15T14:16:41.809+05:30  INFO 42192 --- [main] com.masai.SwiggyApplicationTests         : Started SwiggyApplicationTests in 6.852 seconds (process running for 7.893)
+2024-02-15T14:16:42.617+05:30  INFO 42192 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-02-15T14:16:42.620+05:30  INFO 42192 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-02-15T14:16:42.633+05:30  INFO 42192 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-02-15T14:17:42.978+05:30  INFO 27848 --- [main] com.masai.SwiggyApplicationTests         : Starting SwiggyApplicationTests using Java 19.0.2 with PID 27848 (started by mozak in C:\Users\mozak\OneDrive\Desktop\Masai Problem Setting\Swiggy)
+2024-02-15T14:17:42.980+05:30  INFO 27848 --- [main] com.masai.SwiggyApplicationTests         : No active profile set, falling back to 1 default profile: "default"
+2024-02-15T14:17:43.820+05:30  INFO 27848 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-02-15T14:17:43.896+05:30  INFO 27848 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 66 ms. Found 4 JPA repository interfaces.
+2024-02-15T14:17:44.459+05:30  INFO 27848 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-02-15T14:17:44.531+05:30  INFO 27848 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.5.Final
+2024-02-15T14:17:44.534+05:30  INFO 27848 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2024-02-15T14:17:44.745+05:30  INFO 27848 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2024-02-15T14:17:44.884+05:30  INFO 27848 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-02-15T14:17:44.899+05:30  INFO 27848 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-02-15T14:17:45.265+05:30  INFO 27848 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4beae1e3
+2024-02-15T14:17:45.269+05:30  INFO 27848 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-02-15T14:17:45.400+05:30  WARN 27848 --- [main] o.h.b.model.internal.AnnotationBinder    : HHH000503: A class should not be annotated with both @Inheritance and @MappedSuperclass. @Inheritance will be ignored for: com.masai.model.User.
+2024-02-15T14:17:45.625+05:30  INFO 27848 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2024-02-15T14:17:46.385+05:30  INFO 27848 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-02-15T14:17:46.509+05:30  INFO 27848 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-02-15T14:17:46.796+05:30  WARN 27848 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-02-15T14:17:48.870+05:30  WARN 27848 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 20d78d27-cf18-4374-91ff-0553bffdfa20
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-02-15T14:17:49.051+05:30  INFO 27848 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5a0f5567, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@106f0051, org.springframework.security.web.context.SecurityContextHolderFilter@59eb987a, org.springframework.security.web.header.HeaderWriterFilter@5b166420, org.springframework.security.web.csrf.CsrfFilter@4b98c80c, org.springframework.security.web.authentication.logout.LogoutFilter@3ce067bd, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7ecca48, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@7927209f, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@4fe687b5, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@3dceec83, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@74214ac3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6287e312, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7a02d760, org.springframework.security.web.access.ExceptionTranslationFilter@78b293a, org.springframework.security.web.access.intercept.AuthorizationFilter@20a434a8]
+2024-02-15T14:17:49.132+05:30  INFO 27848 --- [main] com.masai.SwiggyApplicationTests         : Started SwiggyApplicationTests in 6.491 seconds (process running for 7.592)
+2024-02-15T14:17:50.007+05:30  INFO 27848 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-02-15T14:17:50.010+05:30  INFO 27848 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-02-15T14:17:50.021+05:30  INFO 27848 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-02-15T14:29:38.740+05:30  WARN 35220 --- [HikariPool-5 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-5 - Thread starvation or clock leap detected (housekeeper delta=2m28s381ms136µs800ns).
+2024-02-15T14:38:18.508+05:30  WARN 35220 --- [HikariPool-5 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-5 - Thread starvation or clock leap detected (housekeeper delta=8m39s767ms938µs700ns).
+2024-02-15T14:46:21.497+05:30  WARN 35220 --- [HikariPool-5 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-5 - Thread starvation or clock leap detected (housekeeper delta=1m2s867ms117µs700ns).
+2024-02-15T14:53:47.719+05:30  WARN 35220 --- [HikariPool-5 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-5 - Thread starvation or clock leap detected (housekeeper delta=7m26s221ms552µs).
+2024-02-15T14:55:40.938+05:30  INFO 35220 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 30 class path changes (0 additions, 0 deletions, 30 modifications)
+2024-02-15T14:55:40.980+05:30  INFO 35220 --- [Thread-19] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-02-15T14:55:41.007+05:30  INFO 35220 --- [Thread-19] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-02-15T14:55:41.026+05:30  INFO 35220 --- [Thread-19] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2024-02-15T14:55:41.041+05:30  INFO 35220 --- [Thread-19] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
+2024-02-15T14:55:41.211+05:30  INFO 35220 --- [restartedMain] com.masai.SwiggyApplication              : Starting SwiggyApplication using Java 19.0.2 with PID 35220 (C:\Users\mozak\OneDrive\Desktop\Masai Problem Setting\Swiggy\target\classes started by mozak in C:\Users\mozak\OneDrive\Desktop\Masai Problem Setting\Swiggy)
+2024-02-15T14:55:41.211+05:30  INFO 35220 --- [restartedMain] com.masai.SwiggyApplication              : No active profile set, falling back to 1 default profile: "default"
+2024-02-15T14:55:41.468+05:30  INFO 35220 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-02-15T14:55:41.533+05:30  INFO 35220 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 64 ms. Found 4 JPA repository interfaces.
+2024-02-15T14:55:41.675+05:30  INFO 35220 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2024-02-15T14:55:41.676+05:30  INFO 35220 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-15T14:55:41.676+05:30  INFO 35220 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2024-02-15T14:55:41.714+05:30  INFO 35220 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-15T14:55:41.715+05:30  INFO 35220 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 502 ms
+2024-02-15T14:55:41.762+05:30  INFO 35220 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-02-15T14:55:41.771+05:30  INFO 35220 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2024-02-15T14:55:41.771+05:30  INFO 35220 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-02-15T14:55:41.772+05:30  INFO 35220 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Starting...
+2024-02-15T14:55:41.784+05:30  INFO 35220 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-6 - Added connection com.mysql.cj.jdbc.ConnectionImpl@31d59aa8
+2024-02-15T14:55:41.784+05:30  INFO 35220 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Start completed.
+2024-02-15T14:55:41.787+05:30  WARN 35220 --- [restartedMain] o.h.b.model.internal.AnnotationBinder    : HHH000503: A class should not be annotated with both @Inheritance and @MappedSuperclass. @Inheritance will be ignored for: com.masai.model.User.
+2024-02-15T14:55:41.808+05:30  INFO 35220 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2024-02-15T14:55:41.936+05:30  INFO 35220 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-02-15T14:55:42.004+05:30  INFO 35220 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-02-15T14:55:42.046+05:30  WARN 35220 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-02-15T14:55:42.531+05:30  WARN 35220 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 18a8bbf1-18cf-42d0-ba0b-be28e1b5b705
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-02-15T14:55:42.542+05:30  INFO 35220 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4eb440e3, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@501bf44b, org.springframework.security.web.context.SecurityContextHolderFilter@5a0b187b, org.springframework.security.web.header.HeaderWriterFilter@53ec91ee, org.springframework.security.web.csrf.CsrfFilter@610f68bf, org.springframework.security.web.authentication.logout.LogoutFilter@391320dd, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7f2fa3e4, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@25d45a4b, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@52294d2f, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@5f9a7114, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@40dbd915, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1200ca04, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5e3784af, org.springframework.security.web.access.ExceptionTranslationFilter@1c99d218, org.springframework.security.web.access.intercept.AuthorizationFilter@2a568ce2]
+2024-02-15T14:55:42.552+05:30  INFO 35220 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-02-15T14:55:42.566+05:30  INFO 35220 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2024-02-15T14:55:42.569+05:30  INFO 35220 --- [restartedMain] com.masai.SwiggyApplication              : Started SwiggyApplication in 1.392 seconds (process running for 7248.747)
+2024-02-15T14:55:42.571+05:30  INFO 35220 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-02-15T14:55:46.651+05:30  INFO 16356 --- [main] com.masai.SwiggyApplicationTests         : Starting SwiggyApplicationTests using Java 19.0.2 with PID 16356 (started by mozak in C:\Users\mozak\OneDrive\Desktop\Masai Problem Setting\Swiggy)
+2024-02-15T14:55:46.654+05:30  INFO 16356 --- [main] com.masai.SwiggyApplicationTests         : No active profile set, falling back to 1 default profile: "default"
+2024-02-15T14:55:48.042+05:30  INFO 16356 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-02-15T14:55:48.189+05:30  INFO 16356 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 134 ms. Found 4 JPA repository interfaces.
+2024-02-15T14:55:49.078+05:30  INFO 16356 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-02-15T14:55:49.197+05:30  INFO 16356 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.5.Final
+2024-02-15T14:55:49.201+05:30  INFO 16356 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2024-02-15T14:55:49.432+05:30  INFO 16356 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2024-02-15T14:55:49.444+05:30  INFO 16356 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-02-15T14:55:49.465+05:30  INFO 16356 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-02-15T14:55:49.992+05:30  INFO 16356 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1bf10539
+2024-02-15T14:55:49.996+05:30  INFO 16356 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-02-15T14:55:50.249+05:30  WARN 16356 --- [main] o.h.b.model.internal.AnnotationBinder    : HHH000503: A class should not be annotated with both @Inheritance and @MappedSuperclass. @Inheritance will be ignored for: com.masai.model.User.
+2024-02-15T14:55:50.592+05:30  INFO 16356 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2024-02-15T14:55:51.532+05:30  INFO 16356 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-02-15T14:55:51.669+05:30  INFO 16356 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-02-15T14:55:52.114+05:30  WARN 16356 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-02-15T14:55:54.093+05:30  WARN 16356 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: c99efdaa-10e7-4846-b395-f4c0fda5ab7c
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-02-15T14:55:54.310+05:30  INFO 16356 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2b1f0667, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6000ca67, org.springframework.security.web.context.SecurityContextHolderFilter@246701d5, org.springframework.security.web.header.HeaderWriterFilter@39e0fe23, org.springframework.security.web.csrf.CsrfFilter@5522f9b, org.springframework.security.web.authentication.logout.LogoutFilter@cb29b75, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2e6ca6b5, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@4ba29b51, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@27e25c2f, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@14bbfdee, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1d07d728, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@f714749, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@56a7f57f, org.springframework.security.web.access.ExceptionTranslationFilter@26c7940a, org.springframework.security.web.access.intercept.AuthorizationFilter@626a4e0a]
+2024-02-15T14:55:54.371+05:30  INFO 16356 --- [main] com.masai.SwiggyApplicationTests         : Started SwiggyApplicationTests in 8.195 seconds (process running for 12.239)
+2024-02-15T14:55:54.473+05:30  INFO 16356 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-02-15T14:55:54.479+05:30  INFO 16356 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-02-15T14:55:54.492+05:30  INFO 16356 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-02-15T15:16:48.426+05:30  INFO 36692 --- [main] com.masai.RestaurantServiceTest          : Starting RestaurantServiceTest using Java 19.0.2 with PID 36692 (started by mozak in C:\Users\mozak\OneDrive\Desktop\Masai Problem Setting\Swiggy)
+2024-02-15T15:16:48.428+05:30  INFO 36692 --- [main] com.masai.RestaurantServiceTest          : No active profile set, falling back to 1 default profile: "default"
+2024-02-15T15:16:49.104+05:30  INFO 36692 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-02-15T15:16:49.208+05:30  INFO 36692 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 93 ms. Found 4 JPA repository interfaces.
+2024-02-15T15:16:49.284+05:30  INFO 36692 --- [main] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
+2024-02-15T15:16:49.513+05:30  WARN 36692 --- [main] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0: Error creating bean with name 'dataSource': Failed to replace DataSource with an embedded database for tests. If you want an embedded database please put a supported one on the classpath or tune the replace attribute of @AutoConfigureTestDatabase.
+2024-02-15T15:16:49.526+05:30  INFO 36692 --- [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-02-15T15:16:49.569+05:30 ERROR 36692 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0: Error creating bean with name 'dataSource': Failed to replace DataSource with an embedded database for tests. If you want an embedded database please put a supported one on the classpath or tune the replace attribute of @AutoConfigureTestDatabase.
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:550) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1332) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1162) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:560) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:313) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154) ~[spring-context-6.0.10.jar:6.0.10]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:931) ~[spring-context-6.0.10.jar:6.0.10]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608) ~[spring-context-6.0.10.jar:6.0.10]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-3.1.1.jar:3.1.1]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:436) ~[spring-boot-3.1.1.jar:3.1.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312) ~[spring-boot-3.1.1.jar:3.1.1]
+	at org.springframework.boot.test.context.SpringBootContextLoader.lambda$loadContext$3(SpringBootContextLoader.java:137) ~[spring-boot-test-3.1.1.jar:3.1.1]
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:58) ~[spring-core-6.0.10.jar:6.0.10]
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:46) ~[spring-core-6.0.10.jar:6.0.10]
+	at org.springframework.boot.SpringApplication.withHook(SpringApplication.java:1406) ~[spring-boot-3.1.1.jar:3.1.1]
+	at org.springframework.boot.test.context.SpringBootContextLoader$ContextLoaderHook.run(SpringBootContextLoader.java:545) ~[spring-boot-test-3.1.1.jar:3.1.1]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:137) ~[spring-boot-test-3.1.1.jar:3.1.1]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:108) ~[spring-boot-test-3.1.1.jar:3.1.1]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:187) ~[spring-test-6.0.10.jar:6.0.10]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:119) ~[spring-test-6.0.10.jar:6.0.10]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:127) ~[spring-test-6.0.10.jar:6.0.10]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:141) ~[spring-test-6.0.10.jar:6.0.10]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:97) ~[spring-test-6.0.10.jar:6.0.10]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:241) ~[spring-test-6.0.10.jar:6.0.10]
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:138) ~[spring-test-6.0.10.jar:6.0.10]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$10(ClassBasedTestDescriptor.java:377) ~[junit-jupiter-engine-5.9.3.jar:5.9.3]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:382) ~[junit-jupiter-engine-5.9.3.jar:5.9.3]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$11(ClassBasedTestDescriptor.java:377) ~[junit-jupiter-engine-5.9.3.jar:5.9.3]
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179) ~[na:na]
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[na:na]
+	at java.base/java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:310) ~[na:na]
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735) ~[na:na]
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:734) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762) ~[na:na]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:376) ~[junit-jupiter-engine-5.9.3.jar:5.9.3]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$6(ClassBasedTestDescriptor.java:289) ~[junit-jupiter-engine-5.9.3.jar:5.9.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:288) ~[junit-jupiter-engine-5.9.3.jar:5.9.3]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$4(ClassBasedTestDescriptor.java:278) ~[junit-jupiter-engine-5.9.3.jar:5.9.3]
+	at java.base/java.util.Optional.orElseGet(Optional.java:364) ~[na:na]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:277) ~[junit-jupiter-engine-5.9.3.jar:5.9.3]
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31) ~[junit-jupiter-engine-5.9.3.jar:5.9.3]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:105) ~[junit-jupiter-engine-5.9.3.jar:5.9.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:104) ~[junit-jupiter-engine-5.9.3.jar:5.9.3]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:68) ~[junit-jupiter-engine-5.9.3.jar:5.9.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:123) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:123) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:90) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:147) ~[junit-platform-launcher-1.9.3.jar:1.9.3]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:127) ~[junit-platform-launcher-1.9.3.jar:1.9.3]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:90) ~[junit-platform-launcher-1.9.3.jar:1.9.3]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:55) ~[junit-platform-launcher-1.9.3.jar:1.9.3]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:102) ~[junit-platform-launcher-1.9.3.jar:1.9.3]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:54) ~[junit-platform-launcher-1.9.3.jar:1.9.3]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114) ~[junit-platform-launcher-1.9.3.jar:1.9.3]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86) ~[junit-platform-launcher-1.9.3.jar:1.9.3]
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86) ~[junit-platform-launcher-1.9.3.jar:1.9.3]
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:53) ~[junit-platform-launcher-1.9.3.jar:1.9.3]
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:57) ~[junit5-rt.jar:na]
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38) ~[junit-rt.jar:na]
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11) ~[idea_rt.jar:na]
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35) ~[junit-rt.jar:na]
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:235) ~[junit-rt.jar:na]
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:54) ~[junit-rt.jar:na]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource': Failed to replace DataSource with an embedded database for tests. If you want an embedded database please put a supported one on the classpath or tune the replace attribute of @AutoConfigureTestDatabase.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1770) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1417) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1337) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:888) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-6.0.10.jar:6.0.10]
+	... 98 common frames omitted
+Caused by: java.lang.IllegalStateException: Failed to replace DataSource with an embedded database for tests. If you want an embedded database please put a supported one on the classpath or tune the replace attribute of @AutoConfigureTestDatabase.
+	at org.springframework.util.Assert.state(Assert.java:76) ~[spring-core-6.0.10.jar:6.0.10]
+	at org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration$EmbeddedDataSourceFactory.getEmbeddedDatabase(TestDatabaseAutoConfiguration.java:193) ~[spring-boot-test-autoconfigure-3.1.1.jar:3.1.1]
+	at org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration$EmbeddedDataSourceFactoryBean.afterPropertiesSet(TestDatabaseAutoConfiguration.java:153) ~[spring-boot-test-autoconfigure-3.1.1.jar:3.1.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1816) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1766) ~[spring-beans-6.0.10.jar:6.0.10]
+	... 109 common frames omitted
+
+2024-02-15T15:16:49.594+05:30 ERROR 36692 --- [main] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener] to prepare test instance [com.masai.RestaurantServiceTest@1d289d3f]
+
+java.lang.IllegalStateException: Failed to load ApplicationContext for [MergedContextConfiguration@44d7e24 testClass = com.masai.RestaurantServiceTest, locations = [], classes = [com.masai.SwiggyApplication], contextInitializerClasses = [], activeProfiles = [], propertySourceLocations = [], propertySourceProperties = ["org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTestContextBootstrapper=true"], contextCustomizers = [[ImportsContextCustomizer@26c8b296 key = [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.data.jpa.JpaRepositoriesAutoConfiguration, org.springframework.boot.autoconfigure.flyway.FlywayAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration, org.springframework.boot.autoconfigure.liquibase.LiquibaseAutoConfiguration, org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration, org.springframework.boot.autoconfigure.sql.init.SqlInitializationAutoConfiguration, org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration, org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration, org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManagerAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@59402b8f, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@7c37508a, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@304bb45b, org.springframework.boot.test.autoconfigure.actuate.observability.ObservabilityContextCustomizerFactory$DisableObservabilityContextCustomizer@1f, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@351584c0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@fd563118, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@33ecda92, org.springframework.boot.test.context.SpringBootTestAnnotation@78c292b3], contextLoader = org.springframework.boot.test.context.SpringBootContextLoader, parent = null]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:143) ~[spring-test-6.0.10.jar:6.0.10]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:127) ~[spring-test-6.0.10.jar:6.0.10]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:141) ~[spring-test-6.0.10.jar:6.0.10]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:97) ~[spring-test-6.0.10.jar:6.0.10]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:241) ~[spring-test-6.0.10.jar:6.0.10]
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:138) ~[spring-test-6.0.10.jar:6.0.10]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$10(ClassBasedTestDescriptor.java:377) ~[junit-jupiter-engine-5.9.3.jar:5.9.3]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:382) ~[junit-jupiter-engine-5.9.3.jar:5.9.3]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$11(ClassBasedTestDescriptor.java:377) ~[junit-jupiter-engine-5.9.3.jar:5.9.3]
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179) ~[na:na]
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[na:na]
+	at java.base/java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:310) ~[na:na]
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735) ~[na:na]
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:734) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762) ~[na:na]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:376) ~[junit-jupiter-engine-5.9.3.jar:5.9.3]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$6(ClassBasedTestDescriptor.java:289) ~[junit-jupiter-engine-5.9.3.jar:5.9.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:288) ~[junit-jupiter-engine-5.9.3.jar:5.9.3]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$4(ClassBasedTestDescriptor.java:278) ~[junit-jupiter-engine-5.9.3.jar:5.9.3]
+	at java.base/java.util.Optional.orElseGet(Optional.java:364) ~[na:na]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:277) ~[junit-jupiter-engine-5.9.3.jar:5.9.3]
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31) ~[junit-jupiter-engine-5.9.3.jar:5.9.3]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:105) ~[junit-jupiter-engine-5.9.3.jar:5.9.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:104) ~[junit-jupiter-engine-5.9.3.jar:5.9.3]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:68) ~[junit-jupiter-engine-5.9.3.jar:5.9.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:123) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:123) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:90) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54) ~[junit-platform-engine-1.9.3.jar:1.9.3]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:147) ~[junit-platform-launcher-1.9.3.jar:1.9.3]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:127) ~[junit-platform-launcher-1.9.3.jar:1.9.3]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:90) ~[junit-platform-launcher-1.9.3.jar:1.9.3]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:55) ~[junit-platform-launcher-1.9.3.jar:1.9.3]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:102) ~[junit-platform-launcher-1.9.3.jar:1.9.3]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:54) ~[junit-platform-launcher-1.9.3.jar:1.9.3]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114) ~[junit-platform-launcher-1.9.3.jar:1.9.3]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86) ~[junit-platform-launcher-1.9.3.jar:1.9.3]
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86) ~[junit-platform-launcher-1.9.3.jar:1.9.3]
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:53) ~[junit-platform-launcher-1.9.3.jar:1.9.3]
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:57) ~[junit5-rt.jar:na]
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38) ~[junit-rt.jar:na]
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11) ~[idea_rt.jar:na]
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35) ~[junit-rt.jar:na]
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:235) ~[junit-rt.jar:na]
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:54) ~[junit-rt.jar:na]
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0: Error creating bean with name 'dataSource': Failed to replace DataSource with an embedded database for tests. If you want an embedded database please put a supported one on the classpath or tune the replace attribute of @AutoConfigureTestDatabase.
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:550) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1332) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1162) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:560) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:313) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154) ~[spring-context-6.0.10.jar:6.0.10]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:931) ~[spring-context-6.0.10.jar:6.0.10]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608) ~[spring-context-6.0.10.jar:6.0.10]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-3.1.1.jar:3.1.1]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:436) ~[spring-boot-3.1.1.jar:3.1.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312) ~[spring-boot-3.1.1.jar:3.1.1]
+	at org.springframework.boot.test.context.SpringBootContextLoader.lambda$loadContext$3(SpringBootContextLoader.java:137) ~[spring-boot-test-3.1.1.jar:3.1.1]
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:58) ~[spring-core-6.0.10.jar:6.0.10]
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:46) ~[spring-core-6.0.10.jar:6.0.10]
+	at org.springframework.boot.SpringApplication.withHook(SpringApplication.java:1406) ~[spring-boot-3.1.1.jar:3.1.1]
+	at org.springframework.boot.test.context.SpringBootContextLoader$ContextLoaderHook.run(SpringBootContextLoader.java:545) ~[spring-boot-test-3.1.1.jar:3.1.1]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:137) ~[spring-boot-test-3.1.1.jar:3.1.1]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:108) ~[spring-boot-test-3.1.1.jar:3.1.1]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:187) ~[spring-test-6.0.10.jar:6.0.10]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:119) ~[spring-test-6.0.10.jar:6.0.10]
+	... 72 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource': Failed to replace DataSource with an embedded database for tests. If you want an embedded database please put a supported one on the classpath or tune the replace attribute of @AutoConfigureTestDatabase.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1770) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1417) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1337) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:888) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-6.0.10.jar:6.0.10]
+	... 98 common frames omitted
+Caused by: java.lang.IllegalStateException: Failed to replace DataSource with an embedded database for tests. If you want an embedded database please put a supported one on the classpath or tune the replace attribute of @AutoConfigureTestDatabase.
+	at org.springframework.util.Assert.state(Assert.java:76) ~[spring-core-6.0.10.jar:6.0.10]
+	at org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration$EmbeddedDataSourceFactory.getEmbeddedDatabase(TestDatabaseAutoConfiguration.java:193) ~[spring-boot-test-autoconfigure-3.1.1.jar:3.1.1]
+	at org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration$EmbeddedDataSourceFactoryBean.afterPropertiesSet(TestDatabaseAutoConfiguration.java:153) ~[spring-boot-test-autoconfigure-3.1.1.jar:3.1.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1816) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1766) ~[spring-beans-6.0.10.jar:6.0.10]
+	... 109 common frames omitted
+
+2024-02-15T15:44:55.997+05:30  WARN 35220 --- [HikariPool-6 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-6 - Thread starvation or clock leap detected (housekeeper delta=8m13s404ms909µs300ns).
+2024-02-15T16:30:13.704+05:30  WARN 35220 --- [HikariPool-6 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-6 - Thread starvation or clock leap detected (housekeeper delta=8m17s20ms966µs400ns).
+2024-02-15T17:53:10.435+05:30  INFO 35220 --- [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-15T17:53:10.443+05:30  INFO 35220 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-02-15T17:53:10.515+05:30  INFO 35220 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 68 ms
+2024-02-15T17:53:10.742+05:30  WARN 35220 --- [http-nio-8888-exec-1] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [107] milliseconds.
+2024-02-15T18:16:50.984+05:30  WARN 35220 --- [HikariPool-6 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-6 - Thread starvation or clock leap detected (housekeeper delta=19m5s996ms32µs800ns).
+2024-02-15T18:20:18.052+05:30  WARN 35220 --- [HikariPool-6 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-6 - Thread starvation or clock leap detected (housekeeper delta=1m57s43ms54µs200ns).
+2024-02-15T18:54:55.165+05:30  WARN 35220 --- [HikariPool-6 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-6 - Thread starvation or clock leap detected (housekeeper delta=32m37s81ms948µs900ns).
+2024-02-15T19:44:09.665+05:30  WARN 35220 --- [HikariPool-6 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-6 - Thread starvation or clock leap detected (housekeeper delta=5m13s859ms708µs800ns).
+2024-02-15T22:52:35.159+05:30  WARN 35220 --- [HikariPool-6 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-6 - Thread starvation or clock leap detected (housekeeper delta=1h22m27s304ms598µs500ns).
+2024-02-15T23:17:34.941+05:30  INFO 35220 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-02-15T23:17:34.975+05:30  INFO 35220 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown initiated...
+2024-02-15T23:17:34.984+05:30  INFO 35220 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown completed.
